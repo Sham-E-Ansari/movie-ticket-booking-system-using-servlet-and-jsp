@@ -1,0 +1,416 @@
+* {
+	box-sizing:border-box
+}
+
+/* Homepage Top Slideshow */
+.mySlides {
+	display:none
+}
+/*  Player info, Team details Text */
+.textDetails{
+	max-width: 1024px;
+	margin-left: 155px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: LightGray;
+}
+/* Slideshow container Index and NewsPage Top Slideshow*/
+.slideshow-container {
+  max-width: 1024px;
+  position: relative;
+  max-height: 480px;
+  margin: auto;
+  margin-top:5px;
+}
+
+/* Top Slideshow Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators for top Slideshow*/
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* Menubar active page indicator */
+.active {
+  background-color: blue;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Menubar unsorted list design */
+ul {
+    list-style-type: none;
+    margin: 0;
+	margin-left:155px;
+	max-width: 1024px;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: DarkRed;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* active dropdown option indicator when Menu option or page not active */
+li a:hover:not(.active) , dropdown:hover .dropbtn{
+    background-color: DeepSkyBlue;
+}
+/* active dropdown option indicator when Menu option or page active */
+li a.active  , dropdown{
+    color: white;
+    background-color: DeepSkyBlue;
+}
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 165px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Footer Design */
+footer {
+	margin-left: 155px;
+	background-color: DarkRed;
+	color: white;
+	text-align: center;
+	padding: 1em;
+	margin-top:20px;
+	max-width: 1024px;
+	position: relative;
+}
+/* Search , Send Message Input Box */
+input[type=text], select {
+    width: 100%;
+    padding: 10px;
+    margin: 2px 0;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/*Password*/
+input[type=password] {
+	width: 100%;
+    padding: 10px;
+    margin: 2px 0;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/*Send Message Submit Box */
+input[type=submit] {
+    width: 100%;
+    background-color: white;
+    color: Black;
+    padding: 14px 20px;
+    margin: 2px 2px;
+    border: none;
+	max-width: 220px;
+    border-radius: 4px;
+	display:block;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: DeepSkyBlue;
+}
+
+
+/* Homepage body Class*/
+article {
+	margin-left: 200px;
+	max-width:1024px;
+	border-left: 1px solid gray;
+	padding: 1em;
+}
+/* Homepage Nav area (Send Message Area) */
+nav {
+	float: left;
+	clear: both;
+	max-width:200px;
+	padding: 1em;
+}
+.homes{
+	background-color:LightGray;
+	margin-left:155px;
+	width:100%;
+	max-width: 1024px;
+
+}
+
+h3 {
+	padding: 1em;
+	
+}
+
+fieldset {
+	margin-left: 155px;
+	max-width: 1024px;
+
+}
+/*  Player Image, Team Logo*/
+.float-img {
+	float: left;
+	margin-right: 100px;
+	margin-left: 155px;
+	margin-bottom: 10px;
+	padding: 2px;
+}
+
+
+/* Table */
+table { 
+  
+  margin-left: 155px;
+  font-family: arial, sans-serif;
+  width:77%;
+  border: 2px solid #000072; 
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border-spacing: 0;  
+}
+td, th{  
+          border: 0 none; 
+          height: 30px; 
+}		
+th {   
+	background: #000072;
+	color: #FFF; 
+	font-weight: bold;
+	height: 60px;
+}
+td {      
+	border: 1px solid LightGray; 
+	text-align: center; 
+}
+tr:nth-child(even) td { background: #EEE; } 
+tr:nth-child(odd) td { background: #FDFDFD; }
+
+table th:first-child {border-top-left-radius:20px;}
+table th:last-child {border-top-right-radius:20px;}
+table tr:last-child td:last-child {border-bottom-right-radius:20px;}
+table tr:last-child td:first-child {border-bottom-left-radius:20px;}
+p2{
+	max-width: 334px;
+	border: 1px solid LightGray;
+	background-color:LightGray;
+	
+}
+/*  News Content Total Class */
+.content {
+	max-width:1024px;
+	float: left;
+	margin-left: 155px;
+	margin-bottom:10px;
+}
+/* Single News Content   */
+.news{
+	background-color: LightGray;
+	width:1024px;
+	max-height: 400px; 
+	margin-top:10px;
+	float: left; 
+	padding: 10px 26px 17px 8px;
+}
+/*  About Us Division Class  */
+.dv {
+ border: 10px solid gray;
+ background-color: LightGray;
+ padding: 20px;
+ width:100%;
+ max-width:1024px;
+ margin-left: 155px;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/*  Image Gallery Image  */
+img {
+  margin-bottom: -4px;
+}
+/*  Image Gallery Caption  */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+/*  Image Gallery dots */
+.demo {
+  opacity: 0.6;
+}
+
+.actived,
+.demo:hover {
+  opacity: 1;
+}
+img.hover-shadow {
+  transition: 0.3s
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.myGallerySlides {
+  display: none;
+}
+.carousel-caption{
+	background-color:rgba(0,0,0,.5);
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:10;
+	padding:0 0 10px 25px;
+	color:#fff;text-align:left;
+	text-align: center;
+}
